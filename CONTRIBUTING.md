@@ -35,6 +35,14 @@ The interview questions in `SKILL.md` can be improved:
 - **Refine answer choices** - Make options clearer or more comprehensive
 - **Add conditional questions** - Follow-up questions based on previous answers
 
+### Section Writing Guide
+
+The section-by-section writing guidance can be enhanced:
+
+- **Add more good/bad examples** - Real-world examples from different domains
+- **Refine writing rules** - More specific guidance for edge cases
+- **Add industry-specific guidance** - B2B vs B2C, regulated industries, etc.
+
 ### PRD Template
 
 The PRD template structure can be enhanced:
@@ -42,6 +50,13 @@ The PRD template structure can be enhanced:
 - **Add new sections** - Company-specific needs (compliance, legal, etc.)
 - **Improve formatting** - Better markdown structure
 - **Add examples** - Inline examples for each section
+
+### Quality Checklist
+
+The quality checklist can be expanded:
+
+- **Add domain-specific checks** - Security, accessibility, compliance
+- **Add team-specific checks** - What your eng/design teams need
 
 ### Documentation
 

@@ -1,5 +1,7 @@
 # ATARS Planning V1 - Product Requirements Document
 
+> **Note:** This PRD was created using write-prd skill v1.0. It demonstrates a successful real-world PRD that was approved by engineering and design teams. The v3.0.0 template includes additional sections (TL;DR, Kill Criteria, Design Principles) and enhanced writing guidance.
+
 **Version:** 1.0
 **Date:** 2026-01-30
 **Author:** [Product Team]
