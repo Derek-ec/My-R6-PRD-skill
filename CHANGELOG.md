@@ -5,6 +5,121 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.1.0] - 2026-02-02
+
+### Refined - Products, Users, Metrics, and Acceptance Criteria
+
+**Corrected Key Products:**
+- ATARS 2.0 (certified PFR headset)
+- ATARS Planning (scenario creation)
+- ATARS Debrief (post-flight analysis)
+- ATARS 1.2 (daytime training and flight reference)
+
+**Expanded Target User Types:**
+- Added FTU Pilot (already trained pilot at Formal Training Unit)
+- Added Operational Pilot (career pilot doing mission readiness or remedial training)
+- Clarified Student Pilot context (UPT/U-Jets, follows syllabus)
+
+**Platforms Clarified:**
+- Noted that listed platforms (T-38, T-45, F-16, MC-130J, T-7) are 2026 focus
+- PRDs should specify which platforms are in scope
+
+**Product-Specific Metrics:**
+- ATARS Planning: self-service rate, time to scenario, template usage
+- ATARS Debrief: debrief completion rate, time to first insight, reconstruction accuracy
+- ATARS 2.0: system availability, tracking accuracy, pilot trust rating
+- ATARS 1.2: daytime usability score, visibility issues, certification milestones
+
+**Enhanced Acceptance Criteria Guidance:**
+Added comprehensive section on writing acceptance criteria that engineers and designers want to read:
+- What engineers need: specific boundaries, edge cases, data requirements, testable conditions
+- What designers need: user context, visual requirements, interaction model, feedback states
+- Two formats: rule-based and scenario-based (Given/When/Then)
+- Good vs. bad examples
+- Platform-specific criteria guidance
+
+**Updated Quality Checklist:**
+- Added "Acceptance Criteria Quality" section
+- Checks for specific boundaries, edge cases, testability
+- Verifies designers can create mockups without questions
+
+---
+
+## [4.0.0] - 2026-02-02
+
+### Added - ATARS-Specific Domain Context
+
+Transformed the skill from a generic PRD generator to an ATARS-specific tool optimized for Red 6 military aviation training products.
+
+**New Domain Context Section:**
+- About Red 6 and ATARS products (ATARS 2.0, ATARS Planning, Big Red, RedTrace)
+- Value Proposition: The Three Pillars (Pilot Production, Absorption, Retention)
+- Target User Types (IP, Mission Planner, EXCON, Student Pilot)
+- Platform coverage (T-38, T-45, F-16, MC-130J, T-7)
+- ATARS Glossary (PFR, BFM, ACM, SEAD/DEAD, SAM, MEZ/WEZ, etc.)
+
+**New Philosophy:**
+- "Thin to Win" - Build minimum viable, expand based on real feedback
+
+**ATARS-Specific Interview Questions:**
+- Round 1: How do IPs/MPs solve this today? (Manual workarounds, TACTS/ACMI, Contractor support)
+- Round 2: Primary user (IP, MP, EXCON)? What platform?
+- Round 3: Why now? (Project Juice, customer commitment) Which value pillar?
+- Round 4: Success metrics (self-service rate, time to scenario)
+- Round 5: Risks (platform variation, certification impact)
+
+**Requirements in JTBD Format:**
+All requirements now use Jobs to Be Done format:
+```
+**When** [situation/trigger]
+**I want to** [action/capability]
+**So that** [measurable outcome]
+```
+
+**JTBD Categories for ATARS:**
+- Entity Placement (threat aircraft, SAMs, ground targets)
+- Entity Behaviors (flight paths, engagement logic)
+- Templates & Scenarios (save, load, share)
+- Geo-Reference (working areas, bullseyes, IPs)
+- Export & Integration (data formats, CARBON sync)
+
+**Example JTBD Requirements:**
+- "Load Syllabus-Aligned Scenario Template" with Tim Fitzpatrick quotes
+- "Place SAMs with Threat Rings" with evidence from user research
+
+**Updated PRD Template:**
+- Product field includes ATARS products
+- Target User section includes Platform and Command
+- Requirements organized by JTBD categories
+- Design Principles include "Thin to Win" and "Spawn and Go"
+- Non-Goals framed with "Thin to Win" rationale
+- Platform-Specific Notes in Appendix
+
+**ATARS-Specific Success Metrics:**
+- Self-service rate (% without contractor support)
+- Time to scenario (launch to export-ready)
+- Template usage rate
+- Scenario complexity
+- Sortie throughput
+
+**Updated Quality Checklist:**
+- Problem quantified in operational terms (sorties, flight hours, setup time)
+- Requirements use JTBD format
+- Evidence includes quotes from user research
+- Platform considerations documented
+- "Thin to Win" applied
+- Value pillar connection clear
+
+**Key Quotes from User Research:**
+- Tim Fitzpatrick (Navy IP) on templates, spawning, geo-reference, system trust
+
+**Product-Specific Customization Guidance:**
+- ATARS Planning (ground-based, template-first, syllabus alignment)
+- Big Red (natural language, voice interface)
+- ATARS 2.0 (certification, symbology standards)
+
+---
+
 ## [3.0.0] - 2026-02-01
 
 ### Added - Section-by-Section Writing Guide
